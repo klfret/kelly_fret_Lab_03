@@ -2,13 +2,14 @@
 
 
 // ***********************
-// Kelly L. Fret
+//  Kelly L. Fret
 //  9 September 2014
 //  SDI 1409
 //  LAB 3, Deliverable 1
 // ***********************
 
 
+// Start of code
 // Variable Declarations
 var startingPoint = "Lake's \"Entrance\" Gate";
 var endingPoint   = "Lake's Picnic Area";
@@ -22,15 +23,16 @@ console.log(startingPoint);
 console.log(endingPoint);
 console.log(numberOfMiles);
 console.log(sunnyDay);
-//console.log(rideDay);
+
 
 
 // Confirming if a sunny day 
 sunnyDay = confirm("Is it a sunny day? \n\nClick OK for Yes, Cancel for NO");
 
-// 
+
 	if (sunnyDay === true)
 	{
+		// If sunny day, get miles, calculate and display
 		numberOfMiles = parseFloat(prompt("How many miles are you riding today?"));
 			if (numberOfMiles <= 10)
 			{
@@ -46,6 +48,7 @@ sunnyDay = confirm("Is it a sunny day? \n\nClick OK for Yes, Cancel for NO");
 	
 	else 
 	{
+		// If not a sunny day, get when is the next ride and display
 		rideDay = prompt("When is your next riding day?");
 			if (rideDay === "Sunday")
 			{
@@ -57,7 +60,8 @@ sunnyDay = confirm("Is it a sunny day? \n\nClick OK for Yes, Cancel for NO");
 				console.log("You don't ride only on Sundays.");
 			}
 	}
-	
+
+// End of code	
 console.log("Have a wonderful day.");
 
 		
